@@ -96,7 +96,7 @@ header {
 }
 
 
-.presentation .pesentation-avatars span{
+.prspanesentation .pesentation-avatars {
     position:absolute;
     top: 50%;
     font-weight: 700
@@ -514,3 +514,110 @@ footer .bar {
     }
 }
 
+@media(max-width:768px) {
+    .header-menu-button button{
+        width: 140px;
+    }
+    .presentation-badge {
+        display: none;
+    }
+    
+    .header-tab h2 {
+        font-size: 40px;
+    }
+
+    .flex-mais--populares {
+        flex-wrap: wrap;
+    }
+    .populares-vertical {
+        margin: auto;
+    }
+    .bar-separation,
+    .bar-vertical {
+        display: none;
+    }
+    .footer-contato{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .contato {
+        padding: 20px 0; 
+    }
+    .contatp .text-titulo {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .contato input, button {
+        margin-top: 20px;
+    }
+    .header-menu-button img {
+        top: 30px;
+    }
+    .links {
+        width: 750px;
+    }
+}
+
+@media(max-width:425px) {
+    header {
+        background-position: center;
+    }
+    .header-menu--nav {
+        display: none;
+    }
+    .header-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation {
+        display: flex;
+        flex-direction: column;
+    }
+    .presentation-text {
+        display: none;
+    }
+    .presentation-text--principal {
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+    .presentation-text--principal h1 {
+        font-size: 40px;
+        margin: 20px;
+    }
+    .section-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-top: 30px;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .flex-text--banner {
+        padding: 5px;
+    }
+    .contato {
+        height: 100%;
+        width: 100%;
+    }
+    .contato-box {
+        margin-top: 60px;
+    }
+    .links {
+        display: none;
+    }
+    .contato button {
+        width: 80px;
+    }
+    .content-rede {
+         display: flex;
+         flex-direction: column;
+    }
+
+    .rocket {
+        margin-top: 50px;
+    }
+}
